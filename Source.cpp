@@ -8,12 +8,8 @@ CIS 1202
 using namespace std;
 
 
-
-double half(double number) {
-	return number / 2;
-}
-
-float half(float number) {
+template <typename t>
+t half(t number) {
 	return number / 2;
 }
 
@@ -23,8 +19,8 @@ int half(int number){
 
 
 int main() {
-	double a = 7;
-	float b = 5;
+	double a = 13;
+	float b = 7.5;
 	int c = 3;
 
 	cout << half(a) << endl;
